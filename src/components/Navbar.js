@@ -13,21 +13,21 @@ export class Navbar extends Component {
 
   }
 
-   darkMode=()=>{
-    let dark= document.getElementById('dark')
+  //  darkMode=()=>{
+  //   let dark= document.getElementById('dark')
    
-   if(dark.innerText==="dark mode"){
-    dark.innerText="light mode"
-    document.body.style.backgroundColor="grey"
-    document.button.style.backgroundColor='black'
-    document.Navbar.style.backgroundColor='grey'
-  }
-   else{
-    dark.innerText="dark mode"
-    document.body.style.backgroundColor="white"
-    document.button.style.backgroundColor='blue'
-   }   
-  }
+  //  if(dark.innerText==="dark mode"){
+  //   dark.innerText="light mode"
+  //   document.body.style.backgroundColor="grey"
+  //   document.button.style.backgroundColor='black'
+  //   document.Navbar.style.backgroundColor='grey'
+  // }
+  //  else{
+  //   dark.innerText="dark mode"
+  //   document.body.style.backgroundColor="white"
+  //   document.button.style.backgroundColor='blue'
+  //  }   
+  // }
 
   render() {
     return (
@@ -68,7 +68,7 @@ export class Navbar extends Component {
        </li>
       </ul>
       
-     <button onClick={this.darkMode} id="dark" className="btn btn-sm btn-dark">dark mode</button>
+     {/* <button onClick={this.darkMode} id="dark" className="btn btn-sm btn-dark">dark mode</button> */}
     </div>
   </div>
 </nav>
