@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 export class News extends Component { 
   static PropsTypes = {
     country: 'in',
+    pageSize:8,
     category:'general'
   }
   static defaultProps = {
@@ -15,7 +16,6 @@ export class News extends Component {
 
   constructor(props){
     super(props);
-    // console.log("i amm asad")
     this.state={ articles:[],
       loading:false,
       page:1
@@ -60,8 +60,7 @@ async componentDidMount(){
   let data= await fetch(url)
   let parsedData= await data.json()
   console.log(parsedData)
-  
-this.setState({
+  this.setState({
   page:this.state.page-1,
   articles:parsedData.articles
 })
